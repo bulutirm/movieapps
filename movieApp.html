@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         *{
-            margin: 0px;
+            margin: 0;
             box-sizing: border-box;
         }
         #showcase { 
@@ -83,7 +83,51 @@
         .material-symbols-outlined {
             font-size: 50px;
             color: #776B5D;
-        }        
+        }
+        #features {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .feature {
+            display: flex;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .feature-left,
+        .feature-right {
+            width: 50%;
+            height: 300px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .feature-left {
+            background-color: #776B5D;
+            background: url('/images/featureright.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .feature-right p{
+            margin: 25px 0px 10px 0;
+        }
+        .feature-right button{
+            margin-right: auto;
+            margin-top: 10px;
+            background-color: #776B5D;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .feature-right button:hover {
+            border: 2px solid #B0A695; /* Butona tıklanınca beyaz kenarlık eklemek için */
+        }
 
     </style>
 </head>
@@ -127,6 +171,21 @@
                     <h2>Enjoy Movify</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est sequi magnam obcaecati rem facere!</p>
                 </div>
+            </div>
+        </section>
+
+
+        <section id="features" class="features">
+            <div class="feature">
+                <div class="feature-left">
+
+                </div>
+
+                <div class="feature-right">
+                        <h2>Watch all Movies & TV Shows once they get released!</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus recusandae nisi asperiores tempore est cumque! Tempore doloribus molestiae magnam.</p>
+                        <button>View Features</button>
+                    </div>
             </div>
         </section>
 
